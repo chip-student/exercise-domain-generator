@@ -1,13 +1,19 @@
 let pronoun = ['the', 'our'];
 let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
+let extension = ['.com', '.net', '.us', '.io'];
+let concatena = '';
 
-for (let i = 0; i < 8; i++) {
+for (let x = 0; x < pronoun.length; x++) {
+    for (let y = 0; y < adj.length; y++) {
+        for (let z = 0; z < noun.length; z++) {
+            for (let a = 0; a < extension.length; a++) {
+                concatena = pronoun[x] + adj[y] + noun[z] + extension[a];
+                console.log(concatena);
+            }
+        }
+    }
 
-    let r1= pronoun[Math.floor(Math.random() * pronoun.length)];
-    let r2= adj[Math.floor(Math.random() * adj.length)];
-    let r3= noun[Math.floor(Math.random() * noun.length)];
-
-    console.log(r1 + r2 + r3 +".com");
 }
+
 
